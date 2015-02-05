@@ -17,7 +17,7 @@ DTmerge <- paste(dataTwoDays$Date, dataTwoDays$Time)
 dataTwoDays$DTmerge <- as.POSIXct(DTmerge)
 
 #plot3
-par()
+
 with(dataTwoDays, {
   plot(Sub_metering_1 ~ DTmerge, type = "l", ylab = "Energy Sub metering", xlab = "")
   lines(Sub_metering_2 ~ DTmerge, col = 'Red')
